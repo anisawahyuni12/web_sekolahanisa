@@ -1,0 +1,24 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+@import "./shared.css";
+@import "./pages/home.css";
+@import "./pages/profil.css";
+@import "./pages/berita.css";
+@import "./pages/galeri.css";
+@import "./pages/ekstrakurikuler.css";
+@import "./pages/produk.css";
+@import "./pages/kontak.css";
+@import "./pages/login.css";
+@import "./pages/admin-dashboard.css";
+@import "./pages/admin-produk.css";
+
+:root {
+  --navy-dark: #0b1440;
+  --navy: #101d5c;
+  --gold: #f4c430;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  color: #1f2430;
+}

@@ -1,0 +1,160 @@
+/* Style khusus halaman Kelola Produk (Admin) */
+
+.admin-page-subtitle {
+    color: #6b7280;
+    margin-bottom: 1.5rem;
+  }
+  
+  /* Dropdown filter kategori */
+  .admin-filter-select {
+    border: 1px solid #e5e7eb;
+    border-radius: .5rem;
+    padding: .55rem 1rem;
+    font-size: .85rem;
+    color: #374151;
+    background: #fff;
+    outline: none;
+  }
+  
+  /* Kartu pembungkus tabel */
+  .admin-table-card {
+    background: #fff;
+    border-radius: .75rem;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, .04);
+    overflow: hidden;
+  }
+  
+  .admin-table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .admin-table thead th {
+    text-align: left;
+    font-size: .7rem;
+    font-weight: 700;
+    letter-spacing: .05em;
+    color: #9ca3af;
+    background: #f9fafb;
+    padding: .9rem 1.25rem;
+    border-bottom: 1px solid #eee;
+  }
+  
+  .admin-table tbody td {
+    padding: .9rem 1.25rem;
+    border-bottom: 1px solid #f1f1f4;
+    vertical-align: middle;
+    font-size: .88rem;
+  }
+  
+  .admin-table tbody tr:last-child td {
+    border-bottom: none;
+  }
+  
+  .admin-table-thumb {
+    position: relative;
+    width: 48px;
+    height: 48px;
+    border-radius: .5rem;
+    overflow: hidden;
+    flex-shrink: 0;
+  }
+  
+  .admin-table-nama {
+    font-weight: 700;
+    color: #1f2430;
+  }
+  
+  .admin-table-deskripsi {
+    font-size: .78rem;
+    color: #9ca3af;
+  }
+  
+  .admin-badge-kategori {
+    display: inline-block;
+    background: #e7eefc;
+    color: #2b4ee0;
+    font-size: .75rem;
+    font-weight: 600;
+    padding: .25rem .7rem;
+    border-radius: 9999px;
+  }
+  
+  .admin-table-harga {
+    font-weight: 700;
+    color: #1f2430;
+  }
+  
+  .admin-status-dot {
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    border-radius: 9999px;
+    background: #22c55e;
+    margin-right: .4rem;
+  }
+  
+  .admin-status-text {
+    color: #374151;
+    font-size: .85rem;
+  }
+  
+  /* Tombol aksi (edit & hapus) */
+  .admin-action-btn {
+    width: 34px;
+    height: 34px;
+    border-radius: .5rem;
+    border: 1px solid #e5e7eb;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: #6b7280;
+    transition: background .15s ease;
+  }
+  
+  .admin-action-btn:hover {
+    background: #f3f4f6;
+  }
+  
+  .admin-action-btn.danger {
+    color: #dc2626;
+    border-color: #fecaca;
+  }
+  
+  .admin-action-btn.danger:hover {
+    background: #fef2f2;
+  }
+  
+  /* Pagination bawah tabel */
+  .admin-pagination-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.25rem;
+    font-size: .85rem;
+    color: #6b7280;
+  }
+  
+  .admin-page-btn {
+    width: 34px;
+    height: 34px;
+    border-radius: .5rem;
+    border: 1px solid #e5e7eb;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: #374151;
+    font-size: .85rem;
+    font-weight: 600;
+    transition: background .15s ease;
+  }
+  
+  .admin-page-btn:hover {
+    background: #f3f4f6;
+  }
+  
+  .admin-page-btn.active {
+    background: var(--navy);
+    border-color: var(--navy);
+    color: #fff;
+  }

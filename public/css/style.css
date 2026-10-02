@@ -1,0 +1,273 @@
+/* TARO FILE INI DI: public/css/style.css */
+/* (REPLACE / timpa file style.css yang lama dengan ini) */
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+html, body {
+  height: 100%;
+}
+
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  position: relative;
+  overflow: hidden;
+  background: #cfd8dc; /* fallback kalau foto belum ke-upload */
+}
+
+/* ===== FOTO BACKGROUND BLUR (persis kayak desain aslinya) ===== */
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background-image: url('/images/bg-sekolah.jpg');
+  background-size: cover;
+  background-position: center;
+  filter: blur(3px) brightness(0.95);
+  transform: scale(1.05); /* biar tepi blur gak keliatan putih */
+  z-index: -2;
+}
+
+/* Lapisan putih transparan di atas foto biar teks tetap kebaca */
+body::after {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background: rgba(255, 255, 255, 0.68);
+  z-index: -1;
+}
+
+/* ===== CARD (dipakai di semua halaman) ===== */
+.login-card,
+.card {
+  background: transparent;
+  width: 100%;
+  max-width: 420px;
+  padding: 20px;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+}
+
+/* ===== LOGIN PAGE ===== */
+.login-card img.logo {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  margin-bottom: 12px;
+  object-fit: cover;
+  border: 2px solid #fff;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+}
+
+.school-name {
+  letter-spacing: 3px;
+  font-size: 13px;
+  font-weight: 700;
+  color: #444;
+  margin-bottom: 8px;
+}
+
+h1.title {
+  color: #0b1f6b;
+  font-size: 26px;
+  font-weight: 700;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  margin-bottom: 6px;
+}
+
+p.subtitle {
+  color: #777;
+  font-size: 14px;
+  margin-bottom: 24px;
+  line-height: 1.5;
+}
+
+.input-group {
+  display: flex;
+  align-items: center;
+  border: 1px solid #ddd;
+  border-radius: 0;
+  padding: 10px 14px;
+  margin-bottom: 16px;
+  text-align: left;
+  background: #fff;
+}
+
+.input-group input {
+  border: none;
+  outline: none;
+  flex: 1;
+  font-size: 14px;
+  padding-left: 10px;
+}
+
+.input-group .icon {
+  color: #999;
+  font-size: 16px;
+}
+
+.toggle-password {
+  cursor: pointer;
+  color: #999;
+  font-size: 16px;
+  background: none;
+  border: none;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  font-size: 14px;
+}
+
+.remember {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  color: #555;
+}
+
+.remember input[type="checkbox"] {
+  appearance: none;
+  -webkit-appearance: none;
+  width: 15px;
+  height: 20px;
+  margin: 0;
+  background: #fff;
+  border: 1.5px solid #aaa;
+  border-radius: 3px;
+  cursor: pointer;
+  position: relative;
+}
+
+.remember input[type="checkbox"]:checked {
+  background: #0b1f6b;
+  border-color: #0b1f6b;
+}
+
+.remember input[type="checkbox"]:checked::after {
+  content: "";
+  position: absolute;
+  left: 4px;
+  top: 1px;
+  width: 4px;
+  height: 9px;
+  border: solid #fff;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+}
+
+a.forgot-link {
+  color: #0b1f6b;
+  font-weight: 700;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+a.forgot-link:hover {
+  text-decoration: underline;
+}
+
+button.btn-login {
+  width: 100%;
+  background: #0b1f6b;
+  color: #fff;
+  border: none;
+  border-radius: 0;
+  padding: 14px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+button.btn-login:hover {
+  background: #091a5c;
+}
+
+.footer-text {
+  margin-top: 24px;
+  font-size: 13px;
+  color: #666;
+  border-top: 1px solid #eee;
+  padding-top: 16px;
+}
+
+.footer-text a {
+  color: #0b1f6b;
+  font-weight: 700;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  text-decoration: none;
+}
+
+.footer-text a:hover {
+  text-decoration: underline;
+}
+
+/* ===== HUBUNGI ADMINISTRATOR PAGE ===== */
+.icon-wrap {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background: #eaf0ff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 16px;
+  font-size: 32px;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  text-align: left;
+  border: 1px solid #eee;
+  border-radius: 8px;
+  padding: 12px 14px;
+  margin-bottom: 12px;
+  text-decoration: none;
+  color: #333;
+  background: #fff;
+  transition: background 0.15s;
+}
+
+.contact-item:hover {
+  background: #f5f7fb;
+}
+
+.contact-item .ic {
+  font-size: 20px;
+}
+
+.contact-item .label {
+  font-size: 12px;
+  color: #999;
+}
+
+.contact-item .value {
+  font-size: 14px;
+  font-weight: 600;
+  color: #0b1f6b;
+}
+
+a.back-link {
+  display: inline-block;
+  margin-top: 20px;
+  color: #0b1f6b;
+  font-weight: 600;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+a.back-link:hover {
+  text-decoration: underline;
+}

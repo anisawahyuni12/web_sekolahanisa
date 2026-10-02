@@ -1,0 +1,41 @@
+/* Style khusus halaman Ekstrakurikuler */
+
+.ekskul-hero {
+  height: 320px;
+}
+
+/* Lapisan biru transparan di atas foto banner */
+.ekskul-hero-overlay {
+  background: rgba(16, 29, 92, .45);
+}
+
+.ekskul-card {
+  border-radius: 1rem;
+  overflow: hidden;
+  border: 1px solid #eee;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, .05);
+  transition: box-shadow .2s ease, transform .2s ease;
+}
+
+.ekskul-card:hover {
+  box-shadow: 0 10px 30px rgba(0, 0, 0, .12);
+  transform: translateY(-2px);
+}
+
+/* Badge kategori, tiap kategori punya warna beda */
+.ekskul-badge {
+  display: inline-block;
+  font-size: .7rem;
+  font-weight: 700;
+  letter-spacing: .05em;
+  padding: .2rem .7rem;
+  border-radius: 9999px;
+}
+
+.badge-olahraga   { background: #fde4c8; color: #92400e; }
+.badge-kepemimpinan { background: #fef3c7; color: #854d0e; }
+.badge-nasionalisme { background: #ecfccb; color: #3f6212; }
+.badge-kemanusiaan { background: #fee2e2; color: #991b1b; }
+.badge-beladiri   { background: #fecaca; color: #7f1d1d; }
+.badge-keagamaan  { background: #fed7aa; color: #9a3412; }
+.badge-kesenian   { background: #fbcfe8; color: #9d174d; }

@@ -1,0 +1,28 @@
+/* Style khusus halaman Beranda */
+
+/* Tombol hero (kalau dipakai lagi nanti) */
+.btn-gold {
+  background: var(--gold);
+  color: #1a1a1a;
+  transition: transform .15s ease, box-shadow .15s ease;
+}
+
+.btn-gold:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(244, 196, 48, .35);
+}
+
+.btn-outline {
+  border: 1.5px solid rgba(255, 255, 255, .6);
+  color: #fff;
+  transition: background .15s ease;
+}
+
+.btn-outline:hover {
+  background: rgba(255, 255, 255, .1);
+}
+
+/* Lapisan gelap transparan di atas foto hero, supaya teks putih tetap kebaca */
+.hero-overlay {
+  background: linear-gradient(90deg, rgba(11, 20, 64, .92) 0%, rgba(11, 20, 64, .55) 45%, rgba(11, 20, 64, 0) 100%);
+}

@@ -1,0 +1,32 @@
+/* Dipakai di banyak halaman (Beranda, Berita, partials navbar/footer/hero) */
+
+.hero-bg {
+    background: linear-gradient(120deg, var(--navy-dark) 0%, var(--navy) 55%, #1a2a7a 100%);
+  }
+  
+  .news-badge {
+    background: linear-gradient(135deg, #4c6fff, #7b3ff2);
+  }
+  
+  .placeholder-img {
+    background: repeating-linear-gradient(45deg, #e7e9f5, #e7e9f5 10px, #eef0fa 10px, #eef0fa 20px);
+  }
+  
+  /* Navbar */
+  .navbar-bg {
+    background: var(--navy);
+  }
+  
+  .nav-link {
+    color: rgba(255, 255, 255, .85);
+    transition: color .15s ease;
+  }
+  
+  .nav-link:hover {
+    color: var(--gold);
+  }
+  
+  .nav-link-active {
+    color: var(--gold);
+    font-weight: 600;
+  }

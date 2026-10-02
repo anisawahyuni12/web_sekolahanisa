@@ -1,0 +1,27 @@
+/* Style khusus halaman Berita */
+
+/* Foto card berita: potong bagian atas, fokus ke bagian bawah foto */
+.news-card-img {
+  object-position: center 80%;
+}
+
+/* Banner atas halaman Berita: dibatasin tingginya biar gak sepenuh layar */
+.berita-hero {
+  height: 340px;
+}
+
+@media (min-width: 768px) {
+  .berita-hero {
+    height: 420px;
+  }
+}
+
+/* Lapisan gelap di bawah foto card, biar judul putih kebaca */
+.news-gradient-overlay {
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, .75) 100%);
+}
+
+/* Teks "Kegiatan" bergaya tulisan tangan di atas foto */
+.news-script-text {
+  font-family: 'Brush Script MT', cursive;
+}

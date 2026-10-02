@@ -1,0 +1,73 @@
+/* Style khusus halaman Produk (E-Koperasi & Atribut) */
+
+.produk-hero {
+    min-height: 380px;
+  }
+  
+  .produk-breadcrumb {
+    color: rgba(255, 255, 255, .7);
+    font-size: .8rem;
+    letter-spacing: .1em;
+  }
+  
+  .produk-breadcrumb::before {
+    content: "";
+    display: inline-block;
+    width: 24px;
+    height: 1px;
+    background: rgba(255, 255, 255, .5);
+    margin-right: 10px;
+    vertical-align: middle;
+  }
+  
+  .produk-card {
+    background: #fff;
+    border-radius: .75rem;
+    overflow: hidden;
+    border: 1px solid #eee;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, .05);
+    transition: box-shadow .2s ease, transform .2s ease;
+  }
+  
+  .produk-card:hover {
+    box-shadow: 0 10px 26px rgba(0, 0, 0, .1);
+    transform: translateY(-2px);
+  }
+  
+  .produk-img-box {
+    background: #f4f5fa;
+  }
+  
+  .produk-kategori {
+    color: #9ca3af;
+    font-size: .68rem;
+    font-weight: 700;
+    letter-spacing: .08em;
+  }
+  
+  .produk-harga {
+    color: var(--navy);
+  }
+  
+  .produk-stok {
+    color: #9ca3af;
+    font-size: .72rem;
+  }
+  
+  .produk-btn {
+    display: block;
+    width: 100%;
+    text-align: center;
+    background: var(--navy);
+    color: #fff;
+    font-size: .78rem;
+    font-weight: 700;
+    letter-spacing: .05em;
+    padding: .6rem 0;
+    border-radius: .5rem;
+    transition: background .15s ease;
+  }
+  
+  .produk-btn:hover {
+    background: var(--navy-dark);
+  }

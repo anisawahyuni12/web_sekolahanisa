@@ -1,0 +1,228 @@
+/* ===== Sidebar Admin ===== */
+.admin-sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 260px;
+  background: var(--navy);
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  padding: 1.5rem 1.1rem;
+}
+
+.admin-sidebar-brand {
+  display: flex;
+  align-items: center;
+  gap: .7rem;
+  margin-bottom: 2rem;
+  padding: 0 .4rem;
+}
+
+.admin-sidebar-logo {
+  width: 40px;
+  height: 40px;
+  border-radius: 9999px;
+  background: #fff;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.admin-sidebar-title {
+  font-weight: 800;
+  font-size: .95rem;
+  line-height: 1.2;
+}
+
+.admin-nav {
+  display: flex;
+  flex-direction: column;
+  gap: .3rem;
+}
+
+.admin-nav-link {
+  display: flex;
+  align-items: center;
+  gap: .8rem;
+  padding: .7rem .9rem;
+  border-radius: .6rem;
+  color: rgba(255, 255, 255, .75);
+  font-size: .9rem;
+  font-weight: 500;
+  transition: background .15s ease, color .15s ease;
+}
+
+.admin-nav-link:hover {
+  background: rgba(255, 255, 255, .08);
+  color: #fff;
+}
+
+.admin-nav-link.active {
+  background: #2b4ee0;
+  color: #fff;
+  font-weight: 700;
+}
+
+.admin-logout {
+  margin-top: auto;
+  display: flex;
+  align-items: center;
+  gap: .8rem;
+  padding: .9rem;
+  border-top: 1px solid rgba(255, 255, 255, .12);
+  color: rgba(255, 255, 255, .85);
+  font-size: .9rem;
+  font-weight: 600;
+}
+
+/* ===== Area konten utama ===== */
+.admin-main {
+  margin-left: 260px;
+  min-height: 100vh;
+  background: #f6f7fb;
+  padding: 1.5rem 2.5rem 3rem 2.5rem;
+}
+
+.admin-topbar {
+  border-bottom: 1px solid #e5e7eb;
+  margin-bottom: 2rem;
+}
+
+.admin-tab-active {
+  display: inline-block;
+  color: var(--navy);
+  font-weight: 700;
+  border-bottom: 2px solid var(--navy);
+  padding-bottom: .8rem;
+}
+
+.admin-tab-inactive {
+  display: inline-block;
+  color: #9ca3af;
+  font-weight: 500;
+  padding-bottom: .8rem;
+  margin-right: 1.5rem;
+}
+
+/* ===== Kartu statistik ===== */
+.admin-stat-card {
+  background: #fff;
+  border-radius: .75rem;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, .04);
+  padding: 1.25rem;
+}
+
+.admin-stat-label {
+  font-size: .7rem;
+  font-weight: 700;
+  letter-spacing: .05em;
+  color: #9ca3af;
+}
+
+.admin-stat-icon {
+  width: 36px;
+  height: 36px;
+  border-radius: .5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+}
+
+.stat-icon-blue   { background: #e0e9ff; }
+.stat-icon-orange { background: #ffe8d9; }
+.stat-icon-teal   { background: #d9f2ea; }
+.stat-icon-purple { background: #ece3ff; }
+
+.admin-stat-number {
+  font-size: 2rem;
+  font-weight: 800;
+  color: #1f2430;
+}
+
+.admin-stat-link {
+  color: var(--navy);
+  font-size: .85rem;
+  font-weight: 600;
+}
+
+/* ===== Aktivitas Terkini ===== */
+.admin-activity-card {
+  background: #fff;
+  border-radius: .75rem;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, .04);
+  padding: 1.75rem;
+}
+
+.admin-see-all {
+  color: var(--navy);
+  font-size: .85rem;
+  font-weight: 600;
+}
+
+.timeline-wrap {
+  position: relative;
+  margin-top: 1.5rem;
+}
+
+.timeline-line {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: #e5e7eb;
+  transform: translateX(-50%);
+}
+
+.timeline-row {
+  display: grid;
+  grid-template-columns: 1fr 60px 1fr;
+  align-items: center;
+  position: relative;
+  z-index: 1;
+  margin-bottom: 2.2rem;
+}
+
+.timeline-row:last-child {
+  margin-bottom: 0;
+}
+
+.timeline-icon {
+  width: 42px;
+  height: 42px;
+  border-radius: 9999px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  font-size: 1.1rem;
+}
+
+.icon-edit    { background: #dbe6ff; }
+.icon-image   { background: #d7f5e6; }
+.icon-refresh { background: #ffe6cc; }
+
+.timeline-box {
+  background: #f8f9fc;
+  border-radius: .75rem;
+  padding: 1rem 1.3rem;
+}
+
+.timeline-box p:first-child {
+  font-size: .8rem;
+  color: #6b7280;
+  margin-bottom: .2rem;
+}
+
+.timeline-box p.timeline-title {
+  font-weight: 700;
+  color: #1f2430;
+  margin-bottom: .3rem;
+}
+
+.timeline-box p.timeline-time {
+  font-size: .75rem;
+  color: #9ca3af;
+}

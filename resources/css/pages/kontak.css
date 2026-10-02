@@ -1,0 +1,108 @@
+/* Style khusus halaman Kontak */
+
+.kontak-hero {
+    height: 380px;
+  }
+  
+  /* Kartu info (Alamat/Telepon/Email/Jam) yang nempel di bawah foto hero */
+  .kontak-info-card {
+    background: #fff;
+    border-radius: .75rem;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, .1);
+    padding: 1.25rem 1rem;
+    text-align: center;
+  }
+  
+  .kontak-icon-circle {
+    width: 44px;
+    height: 44px;
+    border-radius: 9999px;
+    background: var(--navy);
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto .75rem auto;
+    font-size: 1.1rem;
+  }
+  
+  /* Form kirim pesan */
+  .kontak-form-card {
+    background: #fff;
+    border-radius: 1rem;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, .06);
+    padding: 2rem;
+  }
+  
+  .kontak-input {
+    width: 100%;
+    border: 1px solid #e5e7eb;
+    border-radius: .5rem;
+    padding: .65rem .9rem;
+    font-size: .9rem;
+    outline: none;
+    transition: border-color .15s ease;
+  }
+  
+  .kontak-input:focus {
+    border-color: var(--navy);
+  }
+  
+  .kontak-submit-btn {
+    width: 100%;
+    background: var(--navy);
+    color: #fff;
+    font-weight: 600;
+    padding: .8rem 0;
+    border-radius: .5rem;
+    transition: background .15s ease;
+  }
+  
+  .kontak-submit-btn:hover {
+    background: var(--navy-dark);
+  }
+  
+  /* Kartu "Hubungi Kami" di kanan */
+  .kontak-side-card {
+    background: #eef2fb;
+    border-radius: 1rem;
+    padding: 1.75rem;
+  }
+  
+  .kontak-side-icon {
+    width: 36px;
+    height: 36px;
+    border-radius: 9999px;
+    background: var(--navy);
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    font-size: .9rem;
+  }
+  
+  /* Peta */
+  .kontak-map-wrap {
+    position: relative;
+    border-radius: 1rem;
+    overflow: hidden;
+    height: 380px;
+  }
+  
+  .kontak-map-popup {
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    background: #fff;
+    border-radius: .75rem;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, .15);
+    padding: 1rem 1.25rem;
+    max-width: 220px;
+    z-index: 10;
+  }
+  
+  /* Lapisan biru transparan di atas foto banner */
+  .kontak-hero-overlay {
+    background: rgba(16, 29, 92, .45);
+  }
